@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  postgresql-db:
+    container_name: postgresql-db
+    image: bitnami/postgresql:latest
+    restart: always
+    environment:
+      POSTGRESQL_DATABASE: itproce
+      POSTGRESQL_USERNAME: postgres
+      POSTGRESQL_PASSWORD: postgres
+    ports:
+      - "5432:5432"
